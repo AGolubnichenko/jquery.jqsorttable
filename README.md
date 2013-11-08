@@ -1,13 +1,15 @@
-jquery.jqsorttable
+jquery.jqsorttable for CodeIgniter
 ==================
 
-(CodeIgniter) JQuery plugin for the sorting of the custom table
+JQuery plugin for the sorting of the custom table.
 
 
-1) Initialize plugin (example)
+1) Initialize plugin
 ----------------------------------
+Example:
 
 $(document).ready(function() {	 
+
 	$('.some_table').jqsorttable({
 		group_name: 'some_table_name',	//unique name for table
 		sort_field: 'login',		//default sort field
@@ -40,9 +42,10 @@ $(document).ready(function() {
 2) How to use plugin in the CodeIgniter (example)
 ----------------------------------
 
-	Copy Site_jqsorttable.php file into the "libraries" folder of the aplication
+	Copy Site_jqsorttable.php file into the "libraries" folder of the aplication.
 
-		//---------------------------------------------
+	Example:
+
 		$this->load->library('site_jqsorttable');		
 		$sort=$this->site_jqsorttable->get_table_state('some_table_name', array('sort_field'=>'login', 'sort_mode'=>'asc'));		
 
@@ -54,4 +57,3 @@ $(document).ready(function() {
 		}
 
 		$query=$this->db->get();
-		//---------------------------------------------
