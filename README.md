@@ -39,7 +39,7 @@ Example:
 		});	
 	}	
 
-2) How to use plugin in the CodeIgniter (example)
+2) How to use plugin in the CodeIgniter
 ----------------------------------
 
 Copy Site_jqsorttable.php file into the "libraries" folder of the aplication.
